@@ -1,0 +1,16 @@
+PROCEDURE insertionsort( A:array of integer)
+VAR
+   i,j,min,case:integer
+BEGIN
+   for i from 0 t A.length-1 step 1 do 
+   min:=0
+   for j from i+1 to A.length-1 step 1 do 
+   if (A[j]<A[min])then 
+   min:=j
+ end if 
+ end for 
+ 
+ case :=A[i]
+ A[i]:= A [min]
+ A [min]:=case 
+END
